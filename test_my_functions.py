@@ -12,7 +12,7 @@ connectionString = (
 )
 """
 connectionString = (
-    r'DRIVER={/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.10.so.5.1};'
+    r'DRIVER={ODBC Driver 17 for SQL Server};'
     r'SERVER=EPPLWROW0191\SQLEXPRESS;'
     r'DATABASE=TRN;'
     r'UID  = TADQA;'
