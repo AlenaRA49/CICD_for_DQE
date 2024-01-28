@@ -16,7 +16,7 @@ connectionString = (
     r'SERVER=host.docker.internal;'
     r'DATABASE=TRN;'
     r'UID  = TADQA;'
-    r'PWD  = CdaE0f-&8e4-4026'
+    r'PWD  = Afec06A25@*1bbfA'
 )
 
 
