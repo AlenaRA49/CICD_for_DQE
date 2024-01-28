@@ -13,7 +13,7 @@ connectionString = (
 """
 connectionString = (
     r'DRIVER={/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.10.so.5.1};'
-    r'SERVER=host.docker.internal;'
+    r'SERVER=EPPLWROW0191\SQLEXPRESS;'
     r'DATABASE=TRN;'
     r'UID  = TADQA;'
     r'PWD  = Afec06A25@*1bbfA'
