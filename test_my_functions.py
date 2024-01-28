@@ -2,6 +2,7 @@ import pyodbc
 import pytest
 import pymssql
 
+"""
 connectionString = (
     r'DRIVER={SQL Server};'
     r'SERVER=EPPLWROW0191\SQLEXPRESS;'
@@ -9,9 +10,19 @@ connectionString = (
     r'USERNAME  = TADQA;'
     r'PASSWORD  = CdaE0f-&8e4-4026'
 )
+"""
+connectionString = (
+    r'DRIVER={/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.0.so.1.1};'
+    r'SERVER=EPPLWROW0191\SQLEXPRESS;'
+    r'DATABASE=TRN;'
+    r'USERNAME  = TADQA;'
+    r'PASSWORD  = CdaE0f-&8e4-4026'
+)
+
+
+
 cnxn = pyodbc.connect(connectionString)
 cursor = cnxn.cursor()
-
 
 #TEST 1 Jobs table. Verify that minimum Salary in the Jobs table not les than 2000
 @pytest.mark.xfail
