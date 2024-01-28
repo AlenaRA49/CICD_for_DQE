@@ -15,8 +15,8 @@ connectionString = (
     r'DRIVER={/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.10.so.5.1};'
     r'SERVER=host.docker.internal;'
     r'DATABASE=TRN;'
-    r'USERNAME  = TADQA;'
-    r'PASSWORD  = CdaE0f-&8e4-4026'
+    r'UID  = TADQA;'
+    r'PWD  = CdaE0f-&8e4-4026'
 )
 
 
