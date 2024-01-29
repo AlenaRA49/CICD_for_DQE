@@ -12,7 +12,6 @@ mydb = mysql.connector.connect(
 #cnxn = pyodbc.connect(connectionString)
 cursor = mydb.cursor()
 
-
 #TEST 1 Jobs table. Verify that minimum Salary in the Jobs table not les than 2000
 @pytest.mark.xfail
 def test_min_salary():
