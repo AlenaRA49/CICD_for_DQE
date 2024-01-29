@@ -21,7 +21,7 @@ pipeline {
                     sh 'pip install pytest'
 
                     // Run tests and generate HTML report
-                    sh 'pytest --html=report.html test_my_functions.py'
+                    sh 'pytest --html=report.html test_my_functions_MySQL.py'
                 }
             }
 
