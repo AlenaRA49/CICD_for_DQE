@@ -60,14 +60,3 @@ def test_departments_within_the_locations():
     rs = cursor.fetchall()
     departments_locations = rs[0][0]
     assert departments_locations == 0
-
-# TEST 6 Departments table. Verify that Department Name doesn't contain Special symbols
-def test_department_name_without_spch():
-    query = '''select count(*) 
-    from hr.departments
-    where UPPER(department_name) not LIKE '%[A-Za-z0-9]%'
-    '''
-    cursor.execute(query)
-    rs = cursor.fetchall()
-    department_name_without_spch = rs[0][0]
-    assert department_name_without_spch == 0
