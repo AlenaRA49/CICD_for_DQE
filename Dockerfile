@@ -1,11 +1,11 @@
-FROM jenkins/jenkins:lts
+FROM python:3
 
-USER root
+WORKDIR /app
 
-RUN apt-get update -y && \
-    apt-get install -y python3 python3-pip python3-venv && \
-    pip3 install mysql-connector-python
+COPY ./app /app
 
-USER jenkins
+RUN pip install pytest mysql-connector-python
+
+CMD ["pytest"]
 
 EXPOSE 8080
