@@ -3,7 +3,8 @@ import mysql.connector
 import mysql
 
 mydb = mysql.connector.connect(
-  host="localhost",
+  #host="localhost",
+  host="host.docker.internal",
   user="TADQA",
   password="Afec06A25@*1bbfA"
 )
