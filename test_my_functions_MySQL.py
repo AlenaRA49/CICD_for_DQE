@@ -1,7 +1,6 @@
-import pyodbc
 import pytest
-import pymssql
 import mysql.connector
+import mysql
 
 mydb = mysql.connector.connect(
   host="localhost",
