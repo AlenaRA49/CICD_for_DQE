@@ -1,9 +1,15 @@
 # Use Python as the base image
 FROM python:3.8
 
+USER root
+
 # Upgrade pip and install dependencies
 RUN pip install --upgrade pip
-RUN pip install python3-venv mysql-connector-python pytest
+RUN pip install mysql-connector-python pytest
+
+# Create a virtual environment and activate it
+RUN python3 -m venv /app/venv
+ENV PATH="/app/venv/bin:$PATH"
 
 # Set work directory
 WORKDIR /app
@@ -12,5 +18,5 @@ WORKDIR /app
 COPY . /app
 
 # Run the tests
-CMD ["/bin/bash", "-c", "python3 -m venv venv; source venv/bin/activate; pytest"]
+CMD ["pytest"]
 EXPOSE 8080
